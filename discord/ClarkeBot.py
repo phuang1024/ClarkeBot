@@ -91,7 +91,7 @@ async def on_message(message):
     words = content.strip().split()
     if words[0] == "gen" and words[1] in ("gatsby", "huck", "scarlet"):
         prompt = " ".join(words[2:])
-        out = check_output([GAN_SH, content[1], prompt])
+        out = check_output([GAN_SH, words[1], prompt])
         out = out.decode("utf-8").strip()
 
         msg = "Generated text:\n"
