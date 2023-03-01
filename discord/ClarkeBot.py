@@ -87,6 +87,10 @@ async def on_message(message):
             await message.reply("OK")
             last_reply_ok = now
 
+    if "cnix" in content:
+        await message.reply("Try cnix, the Linux distro that I built myself.\n"
+                            "http://54.176.105.157:5555/")
+
     # Run the GAN
     words = content.strip().split()
     if words[0] == "gen" and words[1] in ("gatsby", "huck", "scarlet"):
