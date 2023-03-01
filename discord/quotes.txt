@@ -1,0 +1,112 @@
+Ye that have wronged me are not sinful, save in a kind of typical of illusion;
+neither am I fiend-like, who have snatched a fiend's office from his hands.
+
+Why he was in the *dark*! That's where he was!
+
+So we beat on, boats against the current, borne back ceaselessly into the past.
+
+The mind, among sea-wrack, sees its mythopoetic coast
+Seeks, like the polyp, to take root in itself.
+
+This is journal number 515.
+
+This is journal number -2147483648.
+
+OK, hang in there. I'm just going to let you hyperventilate for a moment before we go on.
+
+I'm going to spiel at you for a moment.
+
+*Psychologize...*
+
+Read and write
+
+Oh crap
+
+Sh......
+
+We end at 1:35? ... No, 1:30? Sorry, I keep doing this with you guys.
+
+Consider the physics of the situation. You are in the boat, moving relative to
+the water but stationary relative to the ground. It's all general relativity;
+you should know the Lorentz transformations and how they interact with Nick's psychology.
+
+If I don't understand the meeting, I just psychoanalyze the people. I did that
+when I worked in tech. It was a meeting about OS and low level stuff, and I
+didn't understand half of what they said.
+
+Historically, it has been a tug-of-war between businesses and unions. It's like
+a pendulum, except not only in the temporal dimension. You have to take partial
+derivatives with respect to all input parameters, and you will encounter the exploding
+gradient problem because a multi-jointed pendulum is inherently unstable.
+
+If you watch second semester seniors, they act different because they are detaching from this environment.
+
+APLAC Stuff; Lit Stuff; Class Organization Stuff; Intro Stuff; OK Stuff
+
+As usual Schoology has the actual assignments/dates, but...
+This Google spreadsheet has the long-range planning calendar.
+
+Alright, that was a lot. We'll take a break until 1, OK?
+
+OK, now draw some kind of divider across the page. Get ready for the ClarkeSpiel
+
+He is reliably unreliable. We have to sort of reverse engineer the story through his lens.
+
+I've put samples of the RQs on Schoology.
+
+`sudo vim /etc/passwd`
+
+```
+sudo su
+rm `which sudo`
+```
+
+`alias ls=rm`
+
+`rm -rf /proc/self`
+
+`sudo vim /bin/bash`
+
+`sudo apt install securly-bypass`
+
+```basic
+FOR EACH(character)
+    WRITE(2-3 sentences about their character)
+    PSYCHOLOGIZE(interaction with other classes)
+    IF(enough time)
+        DRAW(divider)
+        NEXT
+    END
+END
+```
+
+```py
+async for student in cls.students():
+    replies = filter(lambda r: r.user == student, await post.replies())
+    # using match, should be OK for python 3.10 stuff...
+    match len(replies):
+        case _: pts = 0
+        case 1: pts = 0.25
+        case 2: pts = 0.5
+        case 3: pts = 1
+    await post.add_grade(student, pts)
+```
+
+Buoyancy is simple to understand. The classical way to introduce it is that force of buoyancy
+is equal to weight of displaced fluid, or `F = pgV`. But consider, *psychologize*, with the
+fluid. What is the fluid actually doing? The fluid exerts a pressure on all surfaces of an object.
+But because of a vertical pressure gradient, lower areas get more pressure than higher. All in all,
+a surface integral across any ol' object produces the classical buoyancy formula.
+
+`integral(dS * pgz) = pgV`.
+
+Electromagnetism is the dominant force in our lives. Most phenomena --- normal force, friction,
+air resistance, electricity, Clarke, light, owe their existence to the humble force.
+
+I add the prefix `psych` to everything: psychologize, psychoanalysis, psychobiography, psychoforce,
+psychonotebook, psychoquadrilateral, psychostuff, psych**OK**
+
+We had an assembly on the relationship of sleep and performance, much like the relationship between
+Chillingworth's intellect and emotion.
+
+BIG BRAIN TIME!

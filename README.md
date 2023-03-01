@@ -1,0 +1,3 @@
+- cnix: ClarkeNix operating system.
+- discord: Discord bot.
+- transformer: Overfit on literature texts.
