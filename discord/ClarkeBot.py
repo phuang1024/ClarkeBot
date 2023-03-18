@@ -6,7 +6,7 @@ from subprocess import check_output
 import discord
 
 ROOT = os.path.dirname(os.path.realpath(__file__))
-GAN_SH = os.path.join(ROOT, "gan.sh")
+GEN_SH = os.path.join(ROOT, "gen.sh")
 
 REPLY_THRES = 1200
 CLARKE_THRES = 1800
@@ -94,9 +94,11 @@ async def on_message(message):
     # Run the GAN
     words = content.strip().split()
     if words[0] == "gen" and words[1] in ("gatsby", "huck", "scarlet"):
-        prompt = " ".join(words[2:])
-        out = check_output([GAN_SH, words[1], prompt])
-        out = out.decode("utf-8").strip()
+        # Start discord typing
+        async with message.channel.typing():
+            prompt = " ".join(words[2:])
+            out = check_output([GEN_SH, words[1], prompt])
+            out = out.decode("utf-8").strip()
 
         msg = "Generated text:\n"
         msg += out
