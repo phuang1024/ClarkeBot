@@ -138,14 +138,14 @@ def batchify(data: Tensor, bsz: int) -> Tensor:
     data = data.view(bsz, seq_len).t().contiguous()
     return data.to(device)
 
-batch_size = 32
+batch_size = 64
 eval_batch_size = 10
 train_data = batchify(train_data, batch_size)  # shape [seq_len, batch_size]
 val_data = batchify(val_data, eval_batch_size)
 test_data = batchify(test_data, eval_batch_size)
 
 
-bptt = 64
+bptt = 48
 def get_batch(source: Tensor, i: int) -> Tuple[Tensor, Tensor]:
     """
     Args:
@@ -164,10 +164,10 @@ def get_batch(source: Tensor, i: int) -> Tuple[Tensor, Tensor]:
 
 ntokens = len(vocab)  # size of vocabulary
 emsize = 1024  # embedding dimension
-d_hid = 1024  # dimension of the feedforward network model in nn.TransformerEncoder
-nlayers = 5  # number of nn.TransformerEncoderLayer in nn.TransformerEncoder
-nhead = 2  # number of heads in nn.MultiheadAttention
-dropout = 0.3  # dropout probability
+d_hid = 512  # dimension of the feedforward network model in nn.TransformerEncoder
+nlayers = 6  # number of nn.TransformerEncoderLayer in nn.TransformerEncoder
+nhead = 4  # number of heads in nn.MultiheadAttention
+dropout = 0.1  # dropout probability
 model = TransformerModel(ntokens, emsize, nhead, d_hid, nlayers, dropout).to(device)
 
 import copy
