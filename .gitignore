@@ -1,4 +1,4 @@
 discord/token.txt
 
-transformer/*.pt
 transformer/models
+transformer/texts
