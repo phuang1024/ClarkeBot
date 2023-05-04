@@ -138,14 +138,14 @@ def batchify(data: Tensor, bsz: int) -> Tensor:
     data = data.view(bsz, seq_len).t().contiguous()
     return data.to(device)
 
-batch_size = 64
+batch_size = 32
 eval_batch_size = 10
 train_data = batchify(train_data, batch_size)  # shape [seq_len, batch_size]
 val_data = batchify(val_data, eval_batch_size)
 test_data = batchify(test_data, eval_batch_size)
 
 
-bptt = 48
+bptt = 32
 def get_batch(source: Tensor, i: int) -> Tuple[Tensor, Tensor]:
     """
     Args:
@@ -163,20 +163,20 @@ def get_batch(source: Tensor, i: int) -> Tuple[Tensor, Tensor]:
 
 
 ntokens = len(vocab)  # size of vocabulary
-emsize = 1024  # embedding dimension
-d_hid = 512  # dimension of the feedforward network model in nn.TransformerEncoder
-nlayers = 6  # number of nn.TransformerEncoderLayer in nn.TransformerEncoder
+emsize = 256  # embedding dimension
+d_hid = 256  # dimension of the feedforward network model in nn.TransformerEncoder
+nlayers = 4  # number of nn.TransformerEncoderLayer in nn.TransformerEncoder
 nhead = 4  # number of heads in nn.MultiheadAttention
-dropout = 0.1  # dropout probability
+dropout = 0.2  # dropout probability
 model = TransformerModel(ntokens, emsize, nhead, d_hid, nlayers, dropout).to(device)
 
 import copy
 import time
 
 criterion = nn.CrossEntropyLoss()
-lr = 5  # learning rate
+lr = 1  # learning rate
 optimizer = torch.optim.SGD(model.parameters(), lr=lr)
-scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 1, gamma=0.75)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 1, gamma=0.8)
 
 def train(model: nn.Module) -> None:
     model.train()  # turn on train mode
@@ -255,7 +255,7 @@ def gen_sample(length=100, prompt: None | list[str] = None):
 
 if __name__ == "__main__":
     best_val_loss = float('inf')
-    epochs = 40
+    epochs = 20
     
     #with TemporaryDirectory() as tempdir:
     tempdir = "."

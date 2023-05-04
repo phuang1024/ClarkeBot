@@ -4,7 +4,7 @@ import string
 
 from train import *
 
-max_len = 150 if sys.argv[1] == "daylog" else 300
+max_len = 150
 length = random.randint(25, max_len)
 if len(sys.argv) > 3:
     length = int(sys.argv[3])

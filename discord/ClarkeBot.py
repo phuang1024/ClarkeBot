@@ -1,12 +1,13 @@
 import os
 import random
+import sys
 import time
 from subprocess import check_output
 
 import discord
 
-ROOT = os.path.dirname(os.path.realpath(__file__))
-GEN_SH = os.path.join(ROOT, "gen.sh")
+ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+GEN_SCRIPT = os.path.join(ROOT, "transformer", "run.py")
 
 REPLY_THRES = 1200
 CLARKE_THRES = 1800
@@ -96,8 +97,7 @@ async def on_message(message):
     if words[0] == "gen" and words[1] in ("gatsby", "huck", "scarlet"):
         # Start discord typing
         async with message.channel.typing():
-            prompt = " ".join(words[2:])
-            out = check_output([GEN_SH, words[1], prompt])
+            out = check_output([sys.executable, GEN_SCRIPT, words[1]])
             out = out.decode("utf-8").strip()
 
         msg = "Generated text:\n"
