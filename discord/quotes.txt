@@ -12,7 +12,8 @@ This is journal number 515.
 
 This is journal number -2147483648.
 
-OK, hang in there. I'm just going to let you hyperventilate for a moment before we go on.
+OK, hang in there. I'm just going to let you hyperventilate for a moment before
+we go on.
 
 I'm going to spiel at you for a moment.
 
@@ -27,8 +28,9 @@ Sh......
 We end at 1:35? ... No, 1:30? Sorry, I keep doing this with you guys.
 
 Consider the physics of the situation. You are in the boat, moving relative to
-the water but stationary relative to the ground. It's all general relativity;
-you should know the Lorentz transformations and how they interact with Nick's psychology.
+the water but stationary relative to the ground. It's all special relativity;
+you should know the Lorentz transformations and how they interact with Nick's
+psychology.
 
 If I don't understand the meeting, I just psychoanalyze the people. I did that
 when I worked in tech. It was a meeting about OS and low level stuff, and I
@@ -36,10 +38,11 @@ didn't understand half of what they said.
 
 Historically, it has been a tug-of-war between businesses and unions. It's like
 a pendulum, except not only in the temporal dimension. You have to take partial
-derivatives with respect to all input parameters, and you will encounter the exploding
-gradient problem because a multi-jointed pendulum is inherently unstable.
+derivatives with respect to all input parameters, and you will encounter the
+exploding gradient problem because a multi-jointed pendulum is chaotic.
 
-If you watch second semester seniors, they act different because they are detaching from this environment.
+If you watch second semester seniors, they act different because they are
+detaching from this environment.
 
 APLAC Stuff; Lit Stuff; Class Organization Stuff; Intro Stuff; OK Stuff
 
@@ -50,9 +53,23 @@ Alright, that was a lot. We'll take a break until 1, OK?
 
 OK, now draw some kind of divider across the page. Get ready for the ClarkeSpiel
 
-He is reliably unreliable. We have to sort of reverse engineer the story through his lens.
+He is reliably unreliable. We have to sort of reverse engineer the story through
+his lens.
 
 I've put samples of the RQs on Schoology.
+
+I think of plants as being sort of like programs in some sense. They’re just
+really complex sort of algorithms and so depending on what you do, they will
+react in a particular way.
+
+I don’t take it personally that they don’t take MVHS as seriously toward the end
+of the second semester as they may have when they were juniors or at the
+beginning. Because they shouldn’t.
+
+There is a kind of an obsession with originality amongst some English teachers,
+which is unrealistic, both practically and philosophically. What I’m more
+interested in is how students put together the information they have and higher
+order synthetic thinking.
 
 `sudo vim /etc/passwd`
 
@@ -92,21 +109,24 @@ async for student in cls.students():
     await post.add_grade(student, pts)
 ```
 
-Buoyancy is simple to understand. The classical way to introduce it is that force of buoyancy
-is equal to weight of displaced fluid, or `F = pgV`. But consider, *psychologize*, with the
-fluid. What is the fluid actually doing? The fluid exerts a pressure on all surfaces of an object.
-But because of a vertical pressure gradient, lower areas get more pressure than higher. All in all,
-a surface integral across any ol' object produces the classical buoyancy formula.
+Buoyancy is simple to understand. The classical way to introduce it is that
+force of buoyancy is equal to weight of displaced fluid, or `F = pgV`. But
+*psychologize* the fluid. What is the fluid actually doing? The fluid exerts a
+pressure on all surfaces of an object. But because of a vertical pressure
+gradient, lower areas get more pressure than higher. All in all, a surface
+integral across any object produces the classical buoyancy formula.
 
 `integral(dS * pgz) = pgV`.
 
-Electromagnetism is the dominant force in our lives. Most phenomena --- normal force, friction,
-air resistance, electricity, Clarke, light, owe their existence to the humble force.
+Electromagnetism is the dominant force in our lives. Most phenomena --- normal
+force, friction, air resistance, electricity, Clarke, light, owe their existence
+to the humble force.
 
-I add the prefix `psych` to everything: psychologize, psychoanalysis, psychobiography, psychoforce,
-psychonotebook, psychoquadrilateral, psychostuff, psych**OK**
+I add the prefix `psych` to everything: psychologize, psychoanalysis,
+psychobiography, psychoforce, psychonotebook, psychoquadrilateral, psychostuff,
+psych**OK**
 
-We had an assembly on the relationship of sleep and performance, much like the relationship between
-Chillingworth's intellect and emotion.
+We had an assembly on the relationship of sleep and performance, much like the
+relationship between Chillingworth's intellect and emotion.
 
 BIG BRAIN TIME!
