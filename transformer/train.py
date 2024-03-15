@@ -165,7 +165,7 @@ def get_batch(source: Tensor, i: int) -> Tuple[Tensor, Tensor]:
 ntokens = len(vocab)  # size of vocabulary
 emsize = 256  # embedding dimension
 d_hid = 256  # dimension of the feedforward network model in nn.TransformerEncoder
-nlayers = 8  # number of nn.TransformerEncoderLayer in nn.TransformerEncoder
+nlayers = 6  # number of nn.TransformerEncoderLayer in nn.TransformerEncoder
 nhead = 4  # number of heads in nn.MultiheadAttention
 dropout = 0.2  # dropout probability
 model = TransformerModel(ntokens, emsize, nhead, d_hid, nlayers, dropout).to(device)
