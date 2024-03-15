@@ -94,7 +94,7 @@ async def on_message(message):
 
     # Run the GAN
     words = content.strip().split()
-    if words[0] == "gen" and words[1] in ("gatsby", "huckfinn", "scarlet"):
+    if words[0] == "gen" and len(words) == 2:
         # Start discord typing
         async with message.channel.typing():
             out = check_output([sys.executable, GEN_SCRIPT, words[1]], cwd=os.path.join(ROOT, "transformer"))
