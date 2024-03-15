@@ -1,0 +1,8 @@
+## Specs
+
+### Train configuration
+
+```json
+{
+}
+```
