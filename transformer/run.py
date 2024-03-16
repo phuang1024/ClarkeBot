@@ -4,8 +4,7 @@ import string
 
 from train import *
 
-max_len = 150
-length = random.randint(25, max_len)
+length = 200
 if len(sys.argv) > 3:
     length = int(sys.argv[3])
 
